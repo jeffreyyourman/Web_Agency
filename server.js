@@ -29,12 +29,10 @@ app.get('/', function(req,res){
 });
 
 app.post('/sendemail', function(req,res){
-  var firstname = req.body.firstname
-  var lastname = req.body.lastname
-  var number = req.body.number
+  var name = req.body.name
   var email = req.body.email
-  var budgetmessage = req.body.budgetmessage
-  var additionalinfomessage = req.body.additionalinfomessage
+  var number = req.body.number
+  var message = req.body.message
 
   var transporter = nodemailer.createTransport({
     service: 'gmail',
@@ -47,8 +45,8 @@ app.post('/sendemail', function(req,res){
   var mailOptions = {
     from: "",
     to: "",
-    subject: firstname + " " + lastname,
-    html: 'Name' + firstname + lastname + ' ' + '<br><br>' + 'Phone Number: ' + number + '<br><br>' + 'Do you have a budget: ' + budgetmessage + '<br><br>' + 'Additional Message: ' + additionalinfomessage
+    subject: name,
+    html: 'Name' + name + ' ' + '<br><br>' + 'Phone Number: ' + number + '<br><br>' + 'Anything else: ' + message
   };
 
   transporter.sendMail(mailOptions, function(error, info){
