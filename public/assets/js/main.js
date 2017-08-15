@@ -744,6 +744,8 @@
 
 			$('.kenburns').attr('width', w_width);
 			$('.kenburns').attr('height', w_height);
+
+			// debugger;
 			$('.kenburns').kenburns({
 				images: ['http://placehold.it/2440x1578',
 						'http://placehold.it/2440x1578/999/eee',
