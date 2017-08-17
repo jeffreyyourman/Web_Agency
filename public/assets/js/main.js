@@ -747,9 +747,9 @@
 
 			// debugger;
 			$('.kenburns').kenburns({
-				images: ['http://placehold.it/2440x1578',
-						'http://placehold.it/2440x1578/999/eee',
-						'http://placehold.it/2440x1578/ccc/111'
+				images: ['https://cdn-images-1.medium.com/max/1600/1*1C-syheYeL2P3wYwSUVWEw.jpeg',
+						'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?dpr=1&auto=format&fit=crop&w=1199&h=800&q=80&cs=tinysrgb&crop=',
+						'https://static1.squarespace.com/static/527cc9ffe4b06105448def23/t/58e2bfda579fb35c69945a2b/1491255319988/aneta-ivanova-776.jpg?format=1500w'
 						],
 				frames_per_second: 30,
 				display_time: 5000,
