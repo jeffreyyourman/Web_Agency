@@ -4020,7 +4020,8 @@ fieldset[disabled] .form-control:hover {
 }
 
 .navbar-trans .navbar-logo {
-  content: url(../images/logo-light.png);
+  content: url('http://via.placeholder.com/150x30');
+  /*content: url(../images/logo-light.png);*/
 }
 
 .navbar-trans .navbar-logo-dark {
