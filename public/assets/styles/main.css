@@ -5824,6 +5824,17 @@ fieldset[disabled] .form-control:hover {
   color: #ececec;
 }
 
+.count-nbr2,
+.count-nbr2 {
+  display: block;
+  margin-bottom: 30px;
+  font-family: "Open Sans", "Montserrat", "Helvetica Neue", Helvetica,
+    sans-serif;
+  font-size: 65px;
+  font-weight: lighter;
+  color: #ececec;
+}
+
 .number-counters .count-wrapper .count-item .count-text,
 .number-counters-dark-bg .count-wrapper .count-item .count-text {
   color: #ececec;

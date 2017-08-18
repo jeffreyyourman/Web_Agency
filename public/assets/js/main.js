@@ -241,16 +241,16 @@
             separator: ','
           };
           // Counter 0
-          var counter1 = new CountUp('count-1', 0, 0, 0, 3, options);
+          var counter1 = new CountUp('count-1', 0, 6, 0, 3, options);
           counter1.start();
           // Counter 2
-          var counter2 = new CountUp('count-2', 0, 0, 0, 3, options);
-          counter2.start();
+          // var counter2 = new CountUp('count-2', 0, 0, 0, 3, options);
+          // counter2.start();
           // Counter 3
           var counter3 = new CountUp('count-3', 0, 0, 0, 3, options);
           counter3.start();
           // Counter 4
-          var counter4 = new CountUp('count-4', 0, 0, 0, 3, options);
+          var counter4 = new CountUp('count-4', 0, 6, 0, 3, options);
           counter4.start();
           // init only once
           this.destroy();
@@ -272,16 +272,16 @@
             separator: ''
           };
           // Counter 1
-          var counter1 = new CountUp('count-min-1', 0, 675, 0, 3, options);
+          var counter1 = new CountUp('count-min-1', 0, 6, 0, 3, options);
           counter1.start();
           // Counter 2
-          var counter2 = new CountUp('count-min-2', 0, 1457, 0, 3, options);
-          counter2.start();
+          // var counter2 = new CountUp('count-min-2', 0, 0, 0, 3, options);
+          // counter2.start();
           // Counter 3
-          var counter3 = new CountUp('count-min-3', 0, 471, 0, 3, options);
+          var counter3 = new CountUp('count-min-3', 0, 0, 0, 3, options);
           counter3.start();
           // Counter 4
-          var counter4 = new CountUp('count-min-4', 0, 753, 0, 3, options);
+          var counter4 = new CountUp('count-min-4', 0, 6, 0, 3, options);
           counter4.start();
           // init only once
           this.destroy();
