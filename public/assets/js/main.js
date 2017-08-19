@@ -704,7 +704,6 @@
       });
     }
   }
-
   /* --------------------------------------------------
 	Shop Price Filter - (range slider)
 -------------------------------------------------- */
@@ -728,7 +727,6 @@
     );
   } // initRangeSlider
 })(jQuery);
-
 /* --------------------------------------------------
 	Contact Form JS Validation & AJAX call
 -------------------------------------------------- */
@@ -736,29 +734,24 @@ $(function() {
   //	Regular Expressions
   var expEmail = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[_a-z0-9-]+(\.[_a-z0-9-]+)*(\.[a-z]{2,4})$/;
   var expLettersOnly = /^[A-Za-z ]+$/;
-
   //	Checks if a field has the correct length
   function validateLength(fieldValue, minLength) {
     return $.trim(fieldValue).length > minLength;
   }
-
   //	Validate form on typing
   $('.form-ajax').on('keyup', 'input.validate-locally', function() {
     validateField($(this));
   });
-
   //	AJAX call
   $('.form-ajax').submit(function(e) {
     e.preventDefault();
     var $this = $(this),
       action = $this.attr('action');
-
     // The AJAX requrest
     $.post(action, $this.serialize(), function(data) {
       $('.ajax-message').html(data);
     });
   });
-
   //	Validates the fileds
   function validateField(field) {
     var errorText = '',
@@ -776,7 +769,6 @@ $(function() {
       } else {
         $('input[name="name"]').removeClass('input-error');
       }
-
       if (!expLettersOnly.test(value)) {
         error = true;
         errorText +=
@@ -786,7 +778,6 @@ $(function() {
         $('input[name="name"]').removeClass('input-error-2');
       }
     }
-
     // Test the email field
     if (field.attr('name') === 'email') {
       if (!expEmail.test(value)) {
@@ -798,7 +789,6 @@ $(function() {
         $('input[name="email"]').removeClass('input-error');
       }
     }
-
     // Display the errors
     siblings.html(errorText);
   }
