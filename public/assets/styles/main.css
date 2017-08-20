@@ -12052,14 +12052,14 @@ form .input-error-2:focus {
     sans-serif;
   font-weight: 300;
   font-size: 6em;
-  color: #111;
+  color: white;
 }
 
 .kenburn-hero .kenburn-slider .hero-wrapper .hero-content .lead-white-bg span {
   display: inline-block;
   padding: 5px 17px;
   margin-bottom: 10px;
-  background: #fff;
+  /* background: #fff; */
 }
 
 .kenburn-hero .scroller {
