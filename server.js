@@ -34,25 +34,32 @@ app.post('/sendemail', function(req, res) {
   var number = req.body.number;
   var message = req.body.message;
 
+  // var transporter = nodemailer.createTransport({
+  //   service: 'gmail',
+  //   auth: {
+  //     user: 'smtps://hello@thetechturtles.com',
+  //     pass: 'thetechturtles123@smtp.gmail.com'
+  //     // user: 'jeffreyyourman@gmail.com',
+  //     // pass: ''
+  //   }
+  // });
+
   var transporter = nodemailer.createTransport({
-    service: 'gmail',
+    host: 'smtp.hello@thetechturtles.com', // hostname
+    secureConnection: true, // use SSL
+    port: 465, // port for secure SMTP
     auth: {
-      user: 'hello@thetechturtles.com',
-      pass: ''
-    },
-    dkim: {
-      domainName: 'www.thetechturtles.com',
-      keySelector: '2017',
-      privateKey: '-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBg...'
+      user: 'gmail.hello@thetechturtles.com',
+      pass: 'thetechturtles123'
     }
   });
 
   var mailOptions = {
-    from: '',
-    to: '',
+    from: 'hello@thetechturtles.com',
+    to: 'jeffreyyourman@gmail.com',
     subject: name,
     html:
-      'Name' +
+      'Name: ' +
       name +
       ' ' +
       '<br><br>' +
@@ -67,7 +74,7 @@ app.post('/sendemail', function(req, res) {
     if (error) {
       console.log(error);
     } else {
-      console.log('Email sent: ' + info.response);
+      console.log('Email sent: godbless ' + info.response);
     }
   });
   res.redirect('/');
