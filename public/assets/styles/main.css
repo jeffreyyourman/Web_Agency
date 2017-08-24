@@ -3332,7 +3332,8 @@ fieldset[disabled] .form-control:hover {
 }
 
 .footer-contact .contact-info .footer-map {
-  height: 790px;
+  height: 856px;
+/*  height: 790px;*/
   background: #ccc;
 }
 
@@ -3422,7 +3423,8 @@ fieldset[disabled] .form-control:hover {
 .footer-contact .contact-info address .show-map {
   display: block;
   position: absolute;
-  bottom: 100px;
+/*  bottom: 100px;*/
+  bottom: 315px;
   color: #ececec;
 }
 
