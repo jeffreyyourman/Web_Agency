@@ -15,6 +15,48 @@
 /* ---- Other ---- */
 /* ---- Media Queries Breakpoints ---- */
 /* ---- General ---- */
+/*abouts
+*/
+
+          .centers{
+            display: flex;
+            justify-content: center;
+
+          }
+          .centersl{
+            display: flex;
+            justify-content: center;
+
+          }
+          .line{
+            width: 80%;
+            border-bottom: solid #999 0.25px;
+            opacity: 0.3;
+            margin-top:5px;
+            margin-bottom: 30px;
+          }
+          .des{
+            padding-top:0px !important;
+          }
+
+
+        @media screen and (max-width: 1199px) {
+            .centers{
+            display: flex;
+            justify-content: center space-evenly;
+
+              }
+        }
+        @media screen and (max-width: 888px) {
+            .centers{
+                display: block;
+                text-align: center;
+
+              }
+        }
+
+
+
 @media (max-width: 1260px) {
   .mb-sm-30 {
     margin-bottom: 30px;
