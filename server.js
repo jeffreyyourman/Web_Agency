@@ -38,7 +38,7 @@ app.post('/sendemail', function(req, res) {
     service: 'gmail',
     auth: {
       user: 'jeffreyyourman@gmail.com',
-      pass: 'iamidiot24'
+      pass: ''
     }
     // host: 'smtp.thetechturtles.com',
     // port: 465,
