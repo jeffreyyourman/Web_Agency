@@ -35,19 +35,24 @@ app.post('/sendemail', function(req, res) {
   var message = req.body.message;
 
   var transporter = nodemailer.createTransport({
-    host: 'smtp.thetechturtles.com',
-    port: 465,
-    secure: true, // secure:true for port 465, secure:false for port 587
+    service: 'gmail',
     auth: {
-        user: 'hello@thetechturtles.com',
-        pass: 'thetechturtles123'
+      user: 'jeffreyyourman@gmail.com',
+      pass: 'iamidiot24'
     }
+    // host: 'smtp.thetechturtles.com',
+    // port: 465,
+    // secure: true, // secure:true for port 465, secure:false for port 587
+    // auth: {
+    //     user: 'hello@thetechturtles.com',
+    //     pass: 'thetechturtles123'
+    // }
   });
 
 
   var mailOptions = {
     from: 'hello@thetechturtles.com',
-    to: 'jeffreyyourman@gmail.com, djacks@udel.edu, william.a.vasquez@gmail.com',
+    to: 'jeffreyyourman@gmail.com, william.a.vasquez@gmail.com, djacks@udel.edu, hello@thetechturtles.com',
     subject: name,
     html:
       'Name: ' +
