@@ -51,7 +51,7 @@ app.post('/sendemail', function(req, res) {
 
 
   var mailOptions = {
-    from: name,
+    from: 'TheTechTurtles',
     to: 'jeffreyyourman@gmail.com, william.a.vasquez@gmail.com, djacks@udel.edu, hello@thetechturtles.com',
     subject: name,
     html:
@@ -66,7 +66,7 @@ app.post('/sendemail', function(req, res) {
       'Phone Number: ' +
       number +
       '<br><br>' +
-      'Anything else: ' +
+      'Message: ' +
       message
   };
 
