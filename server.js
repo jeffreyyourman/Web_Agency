@@ -59,6 +59,10 @@ app.post('/sendemail', function(req, res) {
       name +
       ' ' +
       '<br><br>' +
+      'Email: ' +
+      email +
+      ' ' +
+      '<br><br>' +
       'Phone Number: ' +
       number +
       '<br><br>' +
