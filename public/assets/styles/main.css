@@ -4023,11 +4023,11 @@ fieldset[disabled] .form-control:hover {
 
 .navbar-trans .navbar-logo {
   /*content: url('http://via.placeholder.com/150x30');*/
-  content: url(../images/150.30.WhiteBG.jpg);
+  content: url(../images/TTTLogoSVGFormat.svg);
 }
 
 .navbar-trans .navbar-logo-dark {
-  content: url(../images/150x30Logo.png);
+  content: url(../images/TTTLogoSVGFormat.svg);
 }
 
 .navbar-trans:not(.navbar-inverse) .navbar-nav li a:focus,
