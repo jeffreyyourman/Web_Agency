@@ -1,6 +1,7 @@
 var express = require('express');
 var app = express();
 var nodemailer = require('nodemailer');
+var keys = require('./keys');
 
 // var methodOverride = require('method-override');
 // var request = require("request");
@@ -28,6 +29,8 @@ app.get('/', function(req, res) {
   res.render('index');
 });
 
+require('./routes/hroutes.js')(app);
+
 app.post('/sendemail', function(req, res) {
   var name = req.body.name;
   var email = req.body.email;
@@ -37,15 +40,15 @@ app.post('/sendemail', function(req, res) {
   var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'jeffreyyourman@gmail.com',
-      pass: 'Iamidiot2402'
+      user: keys.gmailUser,
+      pass: keys.gmailPass
     }
   });
 
-
   var mailOptions = {
     from: 'TheTechTurtles',
-    to: 'jeffreyyourman@gmail.com, william.a.vasquez@gmail.com, djacks@udel.edu, hello@thetechturtles.com',
+    to:
+      'jeffreyyourman@gmail.com, william.a.vasquez@gmail.com, djacks@udel.edu, hello@thetechturtles.com',
     subject: name,
     html:
       'Name: ' +
